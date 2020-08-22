@@ -1,0 +1,39 @@
+{% extends "home/base.html" %}
+
+{% block content %}
+
+<div class="top-right-header">
+    <h1>Mateusz Rechnio</h1>
+</div>
+<div class="secondary-column-bottom">
+    <div>
+        <section class="info-block" id="about-me">
+            <h3>About Me</h3>
+            <p class="info-text">
+                {% lorem 512 w %}
+            </p>
+        </section>
+        <section class="info-block" id="profession">
+            <h3>Profession</h3>
+            <p class="info-text">
+                {% lorem 512 w %}
+            </p>
+        </section>
+    </div>
+    <div>
+        <section class="info-block" id="education">
+            <h3>Education</h3>
+            <p class="info-text">
+                {% lorem 512 w %}
+            </p>
+        </section>
+        <section class="info-block" id="interests">
+            <h3>Interests</h3>
+            <p class="info-text">
+                {% lorem 512 w %}
+            </p>
+        </section>
+    </div>
+</div>
+
+{% endblock content %}

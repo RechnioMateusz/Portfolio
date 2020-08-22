@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'home/home.css' %}">
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" type="image/png" href="{% static 'home/favicon.svg' %}"> -->
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mateusz Rechnio Portfolio</title>
+</head>
+<body>
+    <div class="content">
+        <div id="left" class="main-column">
+            <div class="top-left-header">
+                <h2>PROJECTS</h2>
+            </div>
+            <div class="secondary-column-bottom">
+                Links to projects
+            </div>
+        </div>
+        <div id="right" class="main-column">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <ul id="horizontal-list">
+                <li><span>Made with:</span></li>
+                <li><a href="https://www.djangoproject.com/">django</a></li>
+                <li><a href="https://www.heroku.com">Heroku</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
